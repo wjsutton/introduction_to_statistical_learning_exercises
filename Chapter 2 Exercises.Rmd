@@ -23,9 +23,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. Answers
 
-(a) A flexible method would perform better than an inflexible method because 
+(a) A flexible method would perform better than an inflexible method because the sample size n is large we have more confidence that our method would be a closer fit of the data.
 
-(b) A flexible method would perform worse than an inflexible method because 
+(b) A flexible method would perform worse than an inflexible method because it would overfit the small number of observations.
 
 (c)
 
@@ -63,6 +63,26 @@ For each week we record:
 - the % change in the British market 
 - the % change in the German market
 
+---
+
+2. Answers
+
+(a) regression
+inference
+n = 500
+p = 3 
+
+(b) classification
+prediction
+n = 20
+p = 13
+
+(c) regression
+prediction
+n = 52
+p = 3
+
+---
 
 3. We now revisit the bias-variance decomposition.
 
@@ -78,6 +98,15 @@ The x-axis should represent the amount of flexibility in the method, and the y-a
 
 (b) Explain why each of the five curves has the shape displayed in part (a). 
 
+---
+
+3. Answers
+
+(a)
+
+(b)
+---
+
 
 4. You will now think of some real-life applications for statistical learning.
 
@@ -87,12 +116,50 @@ The x-axis should represent the amount of flexibility in the method, and the y-a
 
 (c) Describe three real-life applications in which cluster analysis might be useful.
 
+---
+
+4. Answers
+
+(a) 
+Determining if a cell is cancerous or not, prediction
+Determining if an email is spam or not, prediction
+Understanding what factors make a successful product, inference
+
+(b)
+Predicting the movement in a stock price, prediction
+Predicting the weight of a person, prediction
+Understanding features that make a car more fuel efficient, inference 
+
+
+(c)
+Describing and segmenting groups of consumers
+Understanding different strains of a virus
+Movie recommendations
+
+---
+
+
 5. What are the advantages and disadvantages of a very flexible (versus a less flexible) approach for regression or classification? 
 Under what circumstances might a more flexible approach be preferred to be a less flexible approach? 
 When might a less flexible approach be preferred?
 
+---
 
-6. describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a parametric approach to  regression or classification (as opposed to a non-parametric approach)? What are its disadvantages?
+5. Answers
+
+The advantages of a flexible approach is a better fit to the data over a less flexible approach.
+
+A less flexible approach may be preferred when the number of observations is small or when there is a danger of over fitting the data.
+
+---
+
+6. Describe the differences between a parametric and a non-parametric statistical learning approach. What are the advantages of a parametric approach to  regression or classification (as opposed to a non-parametric approach)? What are its disadvantages?
+
+---
+
+6. Answers
+
+---
 
 
 7. The table below provides a training data set containing six observations, three predictors, and one qualitative response variable.
@@ -113,6 +180,26 @@ Suppose we wish to use this data set to make a prediction for Y when X1 = X2 = X
 (c) What is our prediction with K = 3? why?
 (d) If the Bayes decision boundary in this problem is highly non-linear, then would we expect the best value for K to be large or small? Why?
 
+---
+
+7. Answers
+
+(a)
+3
+2
+sqrt(10)
+sqrt(5)
+sqrt(2)
+sqrt(3)
+
+(b)
+
+(c)
+
+(d)
+---
+
+
 
 ### Applied
 
@@ -127,6 +214,25 @@ iii) Use the `plot()` function to produce side-by-side box plots of `Outstate` v
 iv) Create a new variable called `Elite` by binning the `Top10perc`
 v) Use the `hist()` function to produce some histograms with differing numbers of bins for a few of the quantitative variables.
 vi) Continue to exploring the data and provide a brief summary of what you discover.
+
+
+```{r}
+# (a)
+data <- read.csv("data/College.csv")
+
+# (b)
+fix(data)
+
+# (c)
+# i
+summary(data)
+
+# ii
+pairs(data)
+
+# iii
+
+```
 
 
 9. This exercise involves the `Auto` data set, make sure that the missing values have been removed from the data.
