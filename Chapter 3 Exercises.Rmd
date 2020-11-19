@@ -1,0 +1,34 @@
+---
+title: "Chapter 3, 3.7 Exercises p120-126"
+author: "Will Sutton"
+date: "24/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Conceptual
+
+1. Describe the null hypotheses to which the p-values given in Table 3.4 correspond. Explain what conclusions you can draw based on these p-values. Your explanation should be phrased in terms of sales, TV, radio, and newspaper, rather than in terms of the coefficients of the linear model.
+
+---
+1. Answers
+
+Table 3.4
+
+          | Coefficent | Std. error | t-statistic | p-value | 
+-----------------------------------------------------------
+Intercept | 2.939      | 0.3119     | 9.42        | < 0.0001|  
+TV        | 0.046      | 0.0014     | 32.81       | < 0.0001| 
+radio     | 0.189      | 0.0086     | 21.89       | < 0.0001| 
+newspaper | -0.001     | 0.0059     | -0.18       |   0.8599| 
+
+
+
+
+
+---
+
+### Applied
